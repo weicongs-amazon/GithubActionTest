@@ -31,16 +31,11 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    
-    - name: Setup Python
-      uses: actions/setup-python@v1.2.0
-      with:
-        python-version: 3.x
       
     - name: esrally installation 
       run: |
-        echo "install pip3"
-        sudo apt-get install python3-pip
+        echo "install python3 and pip3"
+        sudo apt-get install python3-pip python3-dev
         echo "install esrally"
         sudo pip3 install esrally
       
