@@ -40,7 +40,7 @@ jobs:
         sudo pip3 install esrally
       
         echo "run esrally default configuration"
-        esrally configuration
+        esrally configure
         
         echo "run basic test"
-        esrally --distribution-version=7.6.0
+        esrally --distribution-version=6.5.3
